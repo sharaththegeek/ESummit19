@@ -1,0 +1,173 @@
+{%load static%}
+<html>
+    <head>
+            <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+        <title>E-Summit - E-Cell, SASTRA</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'styles.css'%}">
+        <script type="text/javascript" src="{% static 'add.js'%}"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <link rel="stylesheet" href="{% static 'headstyle.css'%}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">  
+        <link rel="stylesheet" href="{% static 'eventstyle.css'%}">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <div id="navbar">
+            <a href="#">Register</a>
+            <a href="#">Sponsors</a>
+            <a href="#">Expo</a>
+            <a href="#">Speakers</a>
+            <a href="#">Events</a>
+            <a href="#about">About</a>
+        </div>
+        <div id="navbar-mobile">
+            <a href="javascript:void(0);" class="icon" onclick="sideLoad()">
+                        <i class="fas fa-bars"></i>
+            </a>
+        </div>
+        <div id="sidebar-mobile">
+            <a href="javascript:void(0);" class="icon" onclick="sideClose()">
+                        <i class="fas fa-times"></i>
+            </a>
+            <a href="#about" onclick="sideClose()">About</a>
+            <a href="#" onclick="sideClose()">Events</a>
+            <a href="#" onclick="sideClose()">Speakers</a>
+            <a href="#" onclick="sideClose()">Expo</a>
+            <a href="#" onclick="sideClose()">Sponsors</a>
+            <a href="#" onclick="sideClose()">Register</a>
+        </div>
+        <div id="main">
+        <div id="three-container"></div>
+        <script>
+                THREE.ShapeUtils.triangulateShape = (function () {
+                        var pnlTriangulator = new PNLTRI.Triangulator();
+                        return function triangulateShape(contour, holes) {
+                            return pnlTriangulator.triangulate_polygon([contour].concat(holes));
+                        };
+                    })();
+            </script>
+            <a href="#about">
+            <div id="bottom-head" class="bottomrev animated infinite bounce">
+                  <i class="fas fa-angle-down"></i>
+            </div>
+            </a>
+        </div>
+            <div id="about">
+                   <h2 class="abt">What is E-Summit?</h2>
+                    <div class="container">
+                            <div class="writing">
+                                    <p>E-Cell SASTRA presents E-Summit '19,<br> a two-day window to break away from the conventions of the world.<br>
+                                       E-Summit is your opportunity to live the entrepreneurial dream. <br>
+                                       With events like Launchpad which help you start your long dreamt startup<br> to an expo where you can showcase the best of your abilities,<br>
+                                       E-Summit is filled with opportunities, ideas, creativity and fun. </p>
+              
+                            </div>
+                            <br><br>
+                            <div class="but">
+                                <button class="video-button">
+                                    <i class="fas fa-play"></i> Watch Video
+                                </button>
+                            </div><br><br>
+                            <div class="text"></div>
+                            
+                    </div>
+                    
+            </div>
+            <div id="events">
+                <div id="launchpad">
+                        <div class="image-container">
+                                <div class="name-image">Launchpad</div>
+                         </div><br><br>
+                         <div class="launch-exp">
+                                <p id="launch-des">
+                                        E-Cell Sastra’s flagship event,<br> 
+                                        Launchpad is the biggest platform to convert your burning idea into reality. <br>
+                                        It is the perfect stage for aspiring entrepreneurs to showcase their big dream and get funded. <br>
+                                        The ultimate destination for creative minds to collaborate together to change the way things work or to create a dent in the universe or to explore the boundaries of practical possibilities. <br>
+                                        With investors carrying heavier wallets this time around, the stakes are higher than ever.
+                                </p><br><br>
+    
+                        <button class="register">Register
+                                <i class="fas fa-sign-in-alt"></i>  
+                        </button>
+                    </div>
+                </div>
+                <div class="eventbox">
+                    <h2 class="events-title">Other Events</h2>
+                <div class="event-container">
+                        
+	
+                        <div class="element-card">
+                            <div class="front-facing">
+                                <h1 class="abr">Big Bouts</h1>
+                                <br>
+                                <br>
+                                <p class="title">Know more</p>
+                                
+                            </div>
+                            <div class="back-facing">
+                                <p>We often hope for stable governments and well governed organisations. There is an intricate beauty to rules and policies. But very often, we are bound to disagree with many rules of our own organisations. What if you got a chance to change those rules? Or what if you could frame your own? What if you got a chance to debate why you need or don’t need a rule or a policy for a government or an organisation? The stage is all yours. The rule book is in your hands. Show them what you have got.</p>
+                                <p><a class="btn" href="#register" target="_blank">Register</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="element-card">
+                            <div class="front-facing">
+                                <h1 class="abr">Marketise</h1>
+                                <br>
+                                <br>
+                                <p class="title">Know more</p>
+                                
+                            </div>
+                            <div class="back-facing">
+                                <p>We often hope for stable governments and well governed organisations. There is an intricate beauty to rules and policies. But very often, we are bound to disagree with many rules of our own organisations. What if you got a chance to change those rules? Or what if you could frame your own? What if you got a chance to debate why you need or don’t need a rule or a policy for a government or an organisation? The stage is all yours. The rule book is in your hands. Show them what you have got.</p>
+                                <p><a class="btn" href="#register" target="_blank">Register</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="element-card">
+                            <div class="front-facing">
+                                <h1 class="abr">Grade Up</h1>
+                                <br>
+                                <br>
+                                <p class="title">Know more</p>
+                                
+                            </div>
+                            <div class="back-facing">
+                                <p>We often hope for stable governments and well governed organisations. There is an intricate beauty to rules and policies. But very often, we are bound to disagree with many rules of our own organisations. What if you got a chance to change those rules? Or what if you could frame your own? What if you got a chance to debate why you need or don’t need a rule or a policy for a government or an organisation? The stage is all yours. The rule book is in your hands. Show them what you have got.</p>
+                                <p><a class="btn" href="#register" target="_blank">Register</a></p>
+                            </div>
+                        </div>
+                    
+                        
+                    </div>
+                </div>
+                <div id="MrCEO">
+
+                </div>
+            </div>
+            <div class="speakers"></div>
+            <script src='http://cdnjs.cloudflare.com/ajax/libs/three.js/r75/three.min.js'></script>
+            <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/bas.js'></script>
+            <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/TextGeometry.js'></script>
+            <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/FontUtils.js'></script>
+            <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/pnltri.min.js'></script>
+            <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/droid_sans_bold.typeface.js'></script>
+            <script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+            <script  src="{%static 'index.js'%}"></script>
+            <script  src="{%static 'event.js'%}"></script>
+            <script  src="{%static 'scramble.js'%}"></script>
+        <script>
+                ScrollReveal().reveal('.bottomrev',{reset: false, delay: 4000});
+                ScrollReveal().reveal('.abt',{reset:true, duration: 1000});
+                ScrollReveal().reveal('.writing',{reset:true,duration:1000});
+                ScrollReveal().reveal('.but',{reset:true,duration:1000});
+                ScrollReveal().reveal('.launch-exp',{reset:true,duration:1000});
+        </script>
+    </body>
+</html>

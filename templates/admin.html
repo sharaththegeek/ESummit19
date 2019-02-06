@@ -1,0 +1,49 @@
+<html>
+    <head>
+            <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+
+        <title>E-Summit- Organiser Login</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    </head>
+    <body class="grey lighten-4">
+        <nav>
+               <div class="nav-wrapper black">
+                    <a href="javascript:void(0)" class="brand-logo center">E-Summit '19</a>
+                </div>
+        </nav>
+        <div class="container">
+            <br>
+            <br>
+            <br>
+            <div class="row">
+            <div class="card col s10 m6 l6 offset-s1 offset-m3 offset-l3">
+                <div class="center-align">
+                <span class="card-title">Login</span>
+                <p style="color:{{color}};">{{message}}</p></div>
+                <div class="row">
+                <form method="POST" class="col s12" action="/trylog/">{%csrf_token%}
+                <div class="input-field col s12 m8 l8 offset-m2 offset-l2">
+                    <input id="userid" name="userid" type="text" class="validate" required>
+                    <label for="userid">User ID</label>
+                </div>
+                <br>
+                <div class="input-field col s12 m8 l8 offset-m2 offset-l2">
+                     <input id="password" name="password" type="password" class="validate" required>
+                     <label for="password">Password</label>
+                </div>
+                <button class="btn black waves-effect waves-light col s12 m6 l4 offset-m3 offset-l4" type="submit" name="action">Login
+                        <i class="material-icons right">send</i>
+                    </button>
+            </form> 
+        </div>      
+            </div>
+            </div>
+        </div>
+    </body>
+</html>
