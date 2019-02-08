@@ -5,6 +5,7 @@ function init() {
     createCameraControls:false,
     fov:10
   });
+  
   root.renderer.setClearColor(0xffffff);
 	root.renderer.setPixelRatio(window.devicePixelRatio || 1);
   root.camera.position.set(0, 0, 1400);
@@ -86,7 +87,7 @@ function generateTextGeometry(text, params) {
   geometry.userData = {};
   geometry.userData.size = {
     width: geometry.boundingBox.max.x - geometry.boundingBox.min.x,
-    height: geometry.boundingBox.max.y - geometry.boundingBox.min.y,
+    height: geometry.boundingBox.max.y - geometry.boundingBox.max.y,
     depth: geometry.boundingBox.max.z - geometry.boundingBox.min.z
   };
 

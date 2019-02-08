@@ -1,14 +1,14 @@
-{%load static%}
 <html>
     <head>
-            <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
         <title>E-Summit - E-Cell, SASTRA</title>
-        <link rel="stylesheet" type="text/css" href="{% static 'styles.css'%}">
-        <script type="text/javascript" src="{% static 'add.js'%}"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script type="text/javascript" src="add.js"></script>
+
         <script src="https://unpkg.com/scrollreveal"></script>
-        <link rel="stylesheet" href="{% static 'headstyle.css'%}">
+        <link rel="stylesheet" href="headstyle.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">  
-        <link rel="stylesheet" href="{% static 'eventstyle.css'%}">
+        <link rel="stylesheet" href="eventstyle.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
@@ -17,11 +17,9 @@
 
     <body>
         <div id="navbar">
-            <a href="#">Register</a>
             <a href="#">Sponsors</a>
-            <a href="#">Expo</a>
             <a href="#">Speakers</a>
-            <a href="#">Events</a>
+            <a href="#events">Events</a>
             <a href="#about">About</a>
         </div>
         <div id="navbar-mobile">
@@ -34,14 +32,17 @@
                         <i class="fas fa-times"></i>
             </a>
             <a href="#about" onclick="sideClose()">About</a>
-            <a href="#" onclick="sideClose()">Events</a>
+            <a href="#events" onclick="sideClose()">Events</a>
             <a href="#" onclick="sideClose()">Speakers</a>
-            <a href="#" onclick="sideClose()">Expo</a>
             <a href="#" onclick="sideClose()">Sponsors</a>
-            <a href="#" onclick="sideClose()">Register</a>
         </div>
         <div id="main">
-        <div id="three-container"></div>
+        <div id="first">
+        <h1 class="intro">EDII and E-Cell SASTRA</h1>
+        <h1 class="pre-intro">presents</h1>
+        <div id="three-container">  
+        </div>
+        </div>  
         <script>
                 THREE.ShapeUtils.triangulateShape = (function () {
                         var pnlTriangulator = new PNLTRI.Triangulator();
@@ -60,10 +61,12 @@
                    <h2 class="abt">What is E-Summit?</h2>
                     <div class="container">
                             <div class="writing">
-                                    <p>E-Cell SASTRA presents E-Summit '19,<br> a two-day window to break away from the conventions of the world.<br>
+                                    <p>E-Cell SASTRA presents E-Summit '19,<br> a three-day window to break away from the conventions of the world.<br>
                                        E-Summit is your opportunity to live the entrepreneurial dream. <br>
                                        With events like Launchpad which help you start your long dreamt startup<br> to an expo where you can showcase the best of your abilities,<br>
-                                       E-Summit is filled with opportunities, ideas, creativity and fun. </p>
+                                       E-Summit is filled with opportunities, ideas, creativity and fun.  <br>
+                                       Dates: February 22,23,24 </p>
+                                     
               
                             </div>
                             <br><br>
@@ -84,11 +87,13 @@
                          </div><br><br>
                          <div class="launch-exp">
                                 <p id="launch-des">
-                                        E-Cell Sastra’s flagship event,<br> 
+                                        E-Cell Sastra's flagship event,<br> 
                                         Launchpad is the biggest platform to convert your burning idea into reality. <br>
                                         It is the perfect stage for aspiring entrepreneurs to showcase their big dream and get funded. <br>
                                         The ultimate destination for creative minds to collaborate together to change the way things work or to create a dent in the universe or to explore the boundaries of practical possibilities. <br>
                                         With investors carrying heavier wallets this time around, the stakes are higher than ever.
+                                        <br>
+                                        Prize Money: 25,000
                                 </p><br><br>
     
                         <button class="register">Register
@@ -110,21 +115,23 @@
                                 
                             </div>
                             <div class="back-facing">
-                                <p>We often hope for stable governments and well governed organisations. There is an intricate beauty to rules and policies. But very often, we are bound to disagree with many rules of our own organisations. What if you got a chance to change those rules? Or what if you could frame your own? What if you got a chance to debate why you need or don’t need a rule or a policy for a government or an organisation? The stage is all yours. The rule book is in your hands. Show them what you have got.</p>
+                                <p>Analyse existing government policies, create the necessary framework, stand up for your views and stand out as the best policy maker in town!</p>
+                                <p>Prize Money: 16,000</p>
                                 <p><a class="btn" href="#register" target="_blank">Register</a></p>
                             </div>
                         </div>
                         
                         <div class="element-card">
                             <div class="front-facing">
-                                <h1 class="abr">Marketise</h1>
+                                <h1 class="abr">Mr. CEO</h1>
                                 <br>
                                 <br>
                                 <p class="title">Know more</p>
                                 
                             </div>
                             <div class="back-facing">
-                                <p>We often hope for stable governments and well governed organisations. There is an intricate beauty to rules and policies. But very often, we are bound to disagree with many rules of our own organisations. What if you got a chance to change those rules? Or what if you could frame your own? What if you got a chance to debate why you need or don’t need a rule or a policy for a government or an organisation? The stage is all yours. The rule book is in your hands. Show them what you have got.</p>
+                                <p>In a pool of officers, managers, HRs and more, be the CEO. Hire your own team, establish your own rules and build your own empire</p>
+                                <p>Prize Money: 16,000</p>
                                 <p><a class="btn" href="#register" target="_blank">Register</a></p>
                             </div>
                         </div>
@@ -138,7 +145,8 @@
                                 
                             </div>
                             <div class="back-facing">
-                                <p>We often hope for stable governments and well governed organisations. There is an intricate beauty to rules and policies. But very often, we are bound to disagree with many rules of our own organisations. What if you got a chance to change those rules? Or what if you could frame your own? What if you got a chance to debate why you need or don’t need a rule or a policy for a government or an organisation? The stage is all yours. The rule book is in your hands. Show them what you have got.</p>
+                                <p>Make your team, build the product, manage your money, collaborate! Handle different scenarios that come up and show them who's the boss!</p>
+                                <p>Prize Money: 16,000</p>
                                 <p><a class="btn" href="#register" target="_blank">Register</a></p>
                             </div>
                         </div>
@@ -146,11 +154,7 @@
                         
                     </div>
                 </div>
-                <div id="MrCEO">
-
-                </div>
             </div>
-            <div class="speakers"></div>
             <script src='http://cdnjs.cloudflare.com/ajax/libs/three.js/r75/three.min.js'></script>
             <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/bas.js'></script>
             <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/TextGeometry.js'></script>
@@ -159,9 +163,9 @@
             <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/droid_sans_bold.typeface.js'></script>
             <script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
             <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-            <script  src="{%static 'index.js'%}"></script>
-            <script  src="{%static 'event.js'%}"></script>
-            <script  src="{%static 'scramble.js'%}"></script>
+            <script  src="index.js"></script>
+            <script  src="event.js"></script>
+            <script  src="scramble.js"></script>
         <script>
                 ScrollReveal().reveal('.bottomrev',{reset: false, delay: 4000});
                 ScrollReveal().reveal('.abt',{reset:true, duration: 1000});
